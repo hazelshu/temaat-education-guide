@@ -83,3 +83,6 @@ h1 span,h3,.card-number{color:var(--deep)}
 
 /* Brand badge matches the submission gradient. */
 .hero .eyebrow{background:linear-gradient(90deg,#34b1ff 0%,#64ff9f 100%);color:#000}
+
+/* Align the wordmarks optically with TeMaat's raised symbol. */
+.brands .host-logo{transform:translateY(5px)}
