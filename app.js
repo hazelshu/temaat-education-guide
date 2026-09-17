@@ -1,0 +1,10 @@
+const el=(tag,cls,text)=>{const node=document.createElement(tag);if(cls)node.className=cls;if(text)node.textContent=text;return node;};
+const nav=document.querySelector('.quick-nav');
+const menu=el('button','nav-toggle','교육안내 목차 ☰');
+menu.type='button';menu.setAttribute('aria-expanded','false');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');menu.setAttribute('aria-expanded',String(open));});
+nav.prepend(menu);
+nav.querySelectorAll('a').forEach((link,index)=>{link.id=`section-link-${index}`;link.addEventListener('click',()=>{nav.classList.remove('is-open');menu.setAttribute('aria-expanded','false');});});
+menu.setAttribute('aria-controls',[...nav.querySelectorAll('a')].map(a=>a.id).join(' '));
+const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;nav.querySelectorAll('a').forEach(a=>{if(a.hash===`#${entry.target.id}`)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});}},{rootMargin:'-15% 0px -60% 0px'});
+document.querySelectorAll('section[id], footer[id]').forEach(section=>observer.observe(section));

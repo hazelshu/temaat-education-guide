@@ -1,0 +1,85 @@
+/* Saltlux palette with the existing Miro-inspired layout. */
+:root{--ink:#0b293d;--deep:#0b293d;--muted:#536574;--accent:#0097f6;--green-soft:#e7faee;--blue:#0097f6;--blue-soft:#e6f5fe;--blue-gray:#f0f6fa;--neutral:#f1f2f2;--line:#d9e3e9;--surface:#f0f6fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:100px}body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.6 'Roobert PRO','Noto Sans KR','Pretendard',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;word-break:keep-all;overflow-wrap:anywhere}a{color:inherit}a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--blue);outline-offset:5px}button{font:inherit}.skip{position:absolute;top:-100px;background:#fff;padding:12px;z-index:20}.skip:focus{top:0}
+.page,.brandbar{width:min(1280px,calc(100% - 64px));margin-inline:auto}.brandbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid #eef0f3}.brands{display:flex;align-items:center;gap:24px}.client-logo{width:175px;height:58px;object-fit:contain}.host-logo{width:112px;height:40px;object-fit:contain}.brand-divider{height:24px;width:1px;background:var(--line)}.header-label{font-size:14px;color:var(--muted)}
+.hero{padding:72px 24px 56px;text-align:center;margin:0}.eyebrow{display:inline-block;background:var(--accent);border-radius:9999px;padding:6px 14px;font-size:13px;letter-spacing:.06em;font-weight:600;margin:0 0 28px}h1{font-size:80px;line-height:1.12;letter-spacing:-2px;font-weight:500;margin:0;color:var(--deep)}h1 span{color:var(--ink)}.hero-description{font-size:18px;line-height:1.5;color:var(--muted);margin:28px 0 24px}.pills{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.pills span{border:1px solid var(--line);border-radius:9999px;padding:6px 14px;font-size:14px}
+.quick-nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:8px;padding:16px 0;margin:0 0 64px;background:#fffffffa;border-block:1px solid #eef0f3;backdrop-filter:blur(12px)}.quick-nav a{text-decoration:none;white-space:nowrap;padding:11px 24px;border:1px solid var(--line);border-radius:9999px;font-size:14px;font-weight:500;transition:background .16s,color .16s}.quick-nav a:hover,.quick-nav a[aria-current="location"]{background:var(--ink);color:#fff;border-color:var(--ink)}.nav-toggle{display:none}
+section{margin-bottom:96px}.section-heading{margin-bottom:32px}.kicker{font-size:13px;letter-spacing:.09em;font-weight:600;color:var(--muted);margin:0 0 16px}h2{font-size:36px;line-height:1.25;letter-spacing:-.5px;font-weight:500;margin:0 0 16px;color:var(--deep)}h3{font-size:24px;line-height:1.3;font-weight:500;margin:0 0 16px}p{margin:0 0 12px}.section-heading>p:last-child{color:var(--muted)}strong,b{font-weight:600}.grid{display:grid;gap:24px}.two{grid-template-columns:1fr 1fr}
+.group-card{border-radius:28px;padding:32px;background:var(--blue-gray)}.group-card:nth-child(2){background:var(--blue-soft)}.group-name{font-size:28px;color:var(--deep);margin-bottom:24px}.date-row{display:flex;align-items:center;gap:24px;padding:19px 0;border-top:1px solid #0b293d22}.day-label{font-size:14px;color:var(--muted)}time{font-size:36px;line-height:1.2;font-weight:500;letter-spacing:-1px}.weekday{margin-left:auto;font-size:16px;color:var(--muted)}.schedule-foot{display:flex;flex-wrap:wrap;gap:24px;padding:24px 0 0;font-size:14px;color:var(--muted)}.schedule-foot strong{color:var(--ink)}
+.card{border:1px solid var(--line);border-radius:28px;padding:32px}.card:nth-child(2){background:var(--surface);border-color:var(--surface)}.card-number{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--green-soft);font-size:14px;font-weight:600;margin-bottom:24px}.card p{color:var(--muted)}ul{margin:0;padding-left:22px}li{padding:5px 0}.button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;background:var(--ink);color:#fff;border:1px solid var(--ink);border-radius:9999px;text-decoration:none;padding:12px 24px;font-size:14px;font-weight:500;margin-top:16px;transition:background .16s}.button:hover,.button:active{background:#143043}.secondary{background:transparent;color:var(--ink);border-color:#b5c7d2}.secondary:hover{background:var(--ink);color:#fff}.account-note{margin-top:24px;padding:24px 32px;background:var(--blue-gray);border-radius:16px}.account-note p{margin:6px 0 0;color:#536574}
+.attendance{background:var(--neutral);border-radius:32px;padding:48px}.attendance-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:36px}.attendance-rules article{border-top:1px solid #0b293d26;padding-top:24px}.attendance-rules b{font-size:22px;font-weight:500;line-height:1.3;display:block}.attendance-rules p{color:#536574;margin:12px 0 0;font-size:16px}
+.day-card{background:var(--surface);padding:32px;border-radius:28px}.day-tag{display:inline-block;border-radius:9999px;background:var(--green-soft);padding:5px 12px;font-size:13px;font-weight:600;margin-bottom:24px;color:#0b293d}.day-card h3{min-height:64px;font-size:28px}.lessons{padding-left:28px;margin:24px 0 0}.lessons li{font-size:16px;padding:14px 0 14px 8px;border-top:1px solid var(--line)}.lessons li::marker{font-size:14px;color:var(--muted)}.outcome{padding:32px;background:var(--blue-soft);border-radius:28px;margin-top:24px}.outcome span{display:block;font-size:13px;font-weight:600;margin-bottom:12px}.outcome strong{font-size:28px;font-weight:500;line-height:1.3;display:block}.outcome p{color:var(--muted);margin:12px 0 0}
+.location-card{display:grid;grid-template-columns:1.2fr 1fr;border:1px solid var(--line);border-radius:28px;overflow:hidden}.location-card>div{padding:40px}.floor{display:block;font-size:64px;letter-spacing:-1.5px;font-weight:500;line-height:1.1;margin-bottom:24px}.location-card aside{padding:40px;background:var(--surface)}.location-card aside h3{font-size:22px}.location-card aside p{color:var(--muted)}dl{margin:28px 0 0}dl div{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--line)}dd{margin:0;font-weight:500}
+.facilities{margin-top:-48px}details{border-block:1px solid var(--line)}summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 0}summary::-webkit-details-marker{display:none}summary small{display:block;font-size:14px;color:var(--muted);margin-bottom:6px}summary strong{font-size:22px;font-weight:500}.toggle{display:grid;place-items:center;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;flex-shrink:0;font-size:24px}details[open] .toggle{transform:rotate(45deg)}.facility-content{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:16px 0 32px}.facility-content h3{font-size:18px}.facility-content p{color:var(--muted);margin:0;font-size:16px}.cafe{grid-column:1/-1}
+footer{display:flex;align-items:center;justify-content:space-between;gap:32px;background:var(--ink);color:#fff;border-radius:32px;padding:48px}footer .kicker{color:#a5a8b5}footer h2{color:#fff}footer p{color:#d8d8df;margin:0}footer a{display:inline-flex;justify-content:center;align-items:center;background:#fff;color:var(--ink);padding:14px 24px;border-radius:9999px;text-decoration:none;font-size:16px}.copyright{font-size:13px;color:var(--muted);padding:24px 0 40px;margin:0}.mobile{display:none}
+@media(max-width:1279px){h1{font-size:64px}.hero{padding-top:64px}time{font-size:32px}.quick-nav a{padding-inline:20px}}
+@media(max-width:1023px){h1{font-size:60px}h2{font-size:32px}.page,.brandbar{width:calc(100% - 48px)}.attendance{padding:32px}.attendance-rules{gap:24px}.attendance-rules b{font-size:20px}.date-row{gap:14px}time{font-size:28px}.weekday{font-size:14px}.day-card h3{font-size:24px}.quick-nav a{padding-inline:16px}footer{flex-direction:column;align-items:flex-start}.location-card>div,.location-card aside{padding:32px}}
+@media(max-width:767px){h1{font-size:48px;letter-spacing:-1.2px;line-height:1.16}.hero{padding:48px 0 40px}.hero-description{font-size:18px}.header-label{display:none}.brands{gap:20px}.client-logo{width:150px;height:48px}.host-logo{width:100px;height:36px}.quick-nav{gap:6px;justify-content:flex-start;overflow-x:auto;margin-bottom:48px}.quick-nav a{padding:10px 16px}.two,.location-card,.attendance-rules{grid-template-columns:1fr}section{margin-bottom:64px}.section-heading{margin-bottom:24px}.group-card,.card,.day-card{padding:28px}.date-row{gap:24px}time{font-size:36px}.weekday{font-size:16px}.schedule-foot{gap:8px}.attendance-rules{margin-top:28px}.attendance-rules article{padding-top:20px}.attendance-rules p br{display:none}.day-card h3{min-height:0}.outcome strong{font-size:24px}.facility-content{grid-template-columns:1fr}.facilities{margin-top:-24px}.mobile{display:block}footer{padding:32px}footer a{font-size:14px}}
+@media(max-width:479px){.page,.brandbar{width:calc(100% - 32px)}h1{font-size:36px;letter-spacing:-1px}h2{font-size:28px;line-height:1.3}h3{font-size:22px}.hero-description{font-size:16px}.hero .eyebrow{font-size:12px}.pills{gap:8px}.pills span{font-size:13px}.client-logo{width:136px}.host-logo{width:90px}.brands{gap:16px}.nav-toggle{display:flex;justify-content:space-between;align-items:center;width:100%;min-height:44px;background:var(--ink);color:#fff;border:0;border-radius:9999px;padding:12px 20px;text-align:left;cursor:pointer}.quick-nav{flex-direction:column;overflow:visible;padding:12px 0}.quick-nav a{display:none;min-height:44px}.quick-nav.is-open a{display:block}.group-card,.card,.day-card,.attendance,.outcome{padding:24px}.date-row{gap:16px}time{font-size:30px}.weekday{font-size:14px}.account-note{padding:24px}.location-card>div,.location-card aside{padding:24px}.attendance-rules b{font-size:22px}.outcome strong{font-size:22px}summary strong{font-size:18px}footer{padding:28px 24px}footer a{padding-inline:18px;max-width:100%}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+@media print{.quick-nav{display:none}.hero{padding-top:24px}h1{font-size:40px}section{break-inside:avoid;margin-bottom:32px}.button{display:none}footer{background:#fff;color:var(--ink);border:1px solid var(--line)}footer h2,footer p,footer .kicker{color:var(--ink)}}
+
+/* Participant copy and compact title revision. */
+.hero h1{font-size:clamp(28px,4vw,52px);line-height:1.25;letter-spacing:-1px}
+.group-hours{font-size:14px;color:var(--muted);margin:14px 0 0}
+.survey-card{display:flex;align-items:center;gap:32px;margin-top:24px;background:#e7faee}
+.survey-card>div{flex:1}.survey-card .button{flex-shrink:0}.survey-card .survey-note{font-size:14px;margin:12px 0 0}.entry-guide{font-size:14px;color:var(--muted);margin-top:18px}
+@media(max-width:767px){.survey-card{display:block}.header-label{display:block;font-size:12px}.brandbar{flex-wrap:wrap;gap:8px}.hero h1{font-size:clamp(26px,5.5vw,38px)}}
+
+/* Group hours inline with the group title; facilities panel redesign. */
+.group-head{display:flex;align-items:baseline;gap:16px;margin-bottom:24px}
+.group-name{margin-bottom:0}
+.group-hours{margin:0 0 0 auto;font-size:16px;color:var(--muted);white-space:nowrap}
+.survey-card p+p{margin-top:0}
+
+.facility-content{grid-template-columns:repeat(2,1fr);gap:16px;padding:8px 0 32px}
+.facility-content article{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
+.facility-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;border:1px solid var(--line);font-size:20px;line-height:1;margin-bottom:16px}
+.facility-content h3{font-size:18px;margin:0 0 8px;color:var(--deep)}
+.facility-content p{font-size:15px;line-height:1.65}
+article.cafe{display:flex;align-items:flex-start;gap:24px;background:var(--green-soft);border-color:#d9e3e9;padding:28px 32px}
+.cafe .facility-icon{flex-shrink:0;width:56px;height:56px;font-size:26px;margin-bottom:0;background:var(--accent);border-color:#0097f6}
+.cafe h3{font-size:22px;margin-bottom:10px}
+.cafe p{font-size:16px;color:#536574}
+.cafe strong{color:#0b293d}
+
+@media(max-width:767px){.facility-content{grid-template-columns:1fr}article.cafe{display:block;padding:24px}.cafe .facility-icon{margin-bottom:16px}}
+@media(max-width:399px){.group-head{gap:8px}.group-hours{font-size:14px}}
+
+/* TeMaat participant guide */
+.client-logo{width:175px;height:58px;object-fit:none;object-position:center;clip-path:inset(0)}
+.deadline{display:inline-block;padding:5px 12px;border-radius:9999px;background:var(--accent);font-size:14px;font-weight:600;margin-bottom:18px}
+.prework-actions{display:flex;flex-direction:column;gap:12px;min-width:210px}.prework-actions .button{margin:0}.prework-actions small{font-size:13px;color:var(--muted);text-align:center}
+.prework-steps{padding-left:22px;margin:24px 0}.prework-steps li{padding:7px 0}.prework-steps span{display:block;font-size:14px;color:var(--muted)}.filename{font-size:14px}.curriculum-note{font-size:14px;color:var(--muted);margin-bottom:24px}
+.session-list{list-style:none;margin:24px 0;padding:0}.session-list li{padding:20px 0;border-top:1px solid var(--line)}.slot-time{display:block;color:var(--muted);font-size:14px;margin-bottom:8px}.session-list strong{display:block;font-size:18px}.session-list p{font-size:15px;color:var(--muted);margin:8px 0 0}.day-result{font-size:14px;padding:20px;border-radius:16px;background:var(--green-soft);color:var(--deep);margin:16px 0 0}.day-result strong{display:block;margin-bottom:8px;font-weight:700}.attendance-rules article:last-child b{font-weight:600}
+@media(max-width:767px){.prework-actions{margin-top:24px;align-items:flex-start}.prework-actions small{text-align:left}}
+
+/* Consolidated course overview */
+.overview-card{background:var(--blue-gray);border-radius:28px;padding:24px 32px}
+.overview-list{margin:0}
+.overview-list div{display:grid;grid-template-columns:120px 1fr;justify-content:normal;gap:24px;padding:18px 0;border-color:#0b293d22}
+.overview-list div:first-child{border-top:0}
+.overview-list dt{color:#536574;font-size:15px}
+.overview-list dd{font-size:18px}
+.overview-hours{font-size:16px;color:#536574}.overview-map{display:inline-flex;margin:0 0 0 16px;padding:8px 18px;font-size:14px;vertical-align:middle}
+.curriculum-note{margin-top:20px}
+#contact{scroll-margin-top:100px}
+@media(max-width:767px){.overview-card{padding:16px 24px}.overview-list div{grid-template-columns:80px 1fr;gap:16px}.overview-list dd{font-size:16px}.overview-map{margin-left:0;display:flex;width:fit-content;margin-top:12px}}
+/* Brand accents and readable foregrounds. */
+:root{--green:#0ed058}
+body{color:#333}
+h1 span,h3,.card-number{color:var(--deep)}
+.card-number{background:var(--green);color:#fff}
+.eyebrow,.deadline,.cafe .facility-icon{color:#fff}
+
+/* Primary submission action, inspired by the Saltlux website. */
+.button.button-gradient{background:linear-gradient(90deg,#34b1ff 0%,#64ff9f 100%);color:#000;border-color:transparent}
+.button.button-gradient:hover,.button.button-gradient:active{background:linear-gradient(90deg,#34b1ff 0%,#64ff9f 100%);color:#000;box-shadow:0 4px 14px #0097f626}
+/* Consistent curriculum cards and day labels. */
+.day-card{background:#fafbfc;border:1px solid var(--line)}
+.day-card .day-tag{background:var(--accent);color:#fff}
+
+.day-card:nth-child(2) .day-tag{background:var(--deep);color:#fff}
+
+/* Brand badge matches the submission gradient. */
+.hero .eyebrow{background:linear-gradient(90deg,#34b1ff 0%,#64ff9f 100%);color:#000}
