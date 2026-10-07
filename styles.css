@@ -86,3 +86,16 @@ h1 span,h3,.card-number{color:var(--deep)}
 
 /* Align the wordmarks optically with TeMaat's raised symbol. */
 .brands .host-logo{transform:translateY(5px)}
+
+/* In-class shortcuts: URLs will be supplied separately. */
+.class-resources .section-heading{margin-bottom:24px}
+.resource-card{display:flex;flex-direction:column;align-items:flex-start;padding:28px 32px;border-radius:28px;background:var(--blue-gray);border:1px solid var(--line)}
+.resource-card:nth-child(2){background:var(--green-soft)}
+.resource-label{font-size:13px;font-weight:600;color:var(--deep);margin-bottom:12px}
+.resource-card>p:not(.resource-label){color:var(--muted);margin-bottom:24px}
+.resource-card .button{margin-top:auto}
+.button.resource-pending:disabled{background:#e1e8ed;color:#536574;border-color:#d3dde4;cursor:not-allowed;box-shadow:none}
+.resource-help{margin-top:16px;color:var(--muted);font-size:14px}
+.resource-help a{text-underline-offset:3px}
+.quick-nav a{padding-inline:16px}
+@media(max-width:767px){.resource-card{padding:24px}}
